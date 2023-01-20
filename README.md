@@ -42,3 +42,7 @@ CREATE TABLE addresses (id int NOT NULL AUTO_INCREMENT, address1 VARCHAR(255) NO
 ```
 
 The Application is running on port `4000`. Access the application with url http://localhost:4000/
+
+***
+`USPS_USER_ID` is needed to set in `config.php` file to access the USPS API.
+To get the user id register in https://registration.shippingapis.com/ and in the email you can find the user id.
