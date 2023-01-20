@@ -1,0 +1,31 @@
+.address_container {
+    border-width: 10px !important;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: #007bff;
+    background-color: #cdcbcb;
+}
+
+.nav-link.active {
+    color: white;
+    background-color: #cdcbcb;
+}
+
+.nav.nav-pills {
+    margin-bottom: 20px;
+}
+
+.modal-body p {
+    margin: 5px;
+}
+
+.area {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.area.active {
+    display: block;
+}

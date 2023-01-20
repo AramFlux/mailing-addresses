@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  mysql:
+    container_name: mailing_form_mysql
+    image: mysql:latest
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    environment: 
+      MYSQL_ROOT_PASSWORD: 'rBqQfB25j8ZKkgYD'
+    ports:
+      - "3306:3306"
+  web:
+    build: ./php
+    container_name: mailing_form_php
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./php:/var/www/html
+    depends_on:
+      - mysql
