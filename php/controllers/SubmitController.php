@@ -17,7 +17,7 @@ class SubmitController extends BaseController
             $checkAddressService->saveAddress($_POST);
         } catch (InvalidDataException $e) {
             $this->send_api_error(['message' => $e->getMessage()]);
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             // Todo: log exception for further investigation
             $this->send_api_error(['message' => $e->getMessage()]);
         }
